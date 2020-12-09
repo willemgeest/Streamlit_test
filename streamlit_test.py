@@ -44,6 +44,7 @@ def get_class_model_Drive():
         with st.spinner("Downloading model... this may take awhile! \n Don't stop it!"):
             download_file_from_google_drive('1BhJaGO6ENvk5va8zVaSJsl8XFCVckCu6', f_checkpoint)
 
+    st.text(f_checkpoint)
     model = resnet50(pretrained=True)
     return model
   
