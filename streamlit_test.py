@@ -1,6 +1,8 @@
 import streamlit as st
 from pathlib import Path
 import requests
+import torch
+from torchvision.models import resnet50
 
 def download_file_from_google_drive(id, destination):
     URL = "https://docs.google.com/uc?export=download"
